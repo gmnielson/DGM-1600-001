@@ -21,9 +21,12 @@ public class conventionsandsyntaxpassoff : MonoBehaviour
 		//The following statement will tell unity when to print "I'm going to splater!" to the console if the cube is < or = 10. 
 		//Enter the correct statement.
 
-		if (transform.) 
-		{
-			Debug.Log ();
+		if (transform.position.y <= 10f) {
+			Debug.Log ("I'm going to splater!");
+		}
+
+		else {
+			Debug.Log ("I am flying!");
 		}
 	}
 }
