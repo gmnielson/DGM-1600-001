@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/CharacterArrays.unity
+- path: Assets/Intro to Script.unity
   isLoaded: 1
   isActive: 1
