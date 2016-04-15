@@ -3,16 +3,26 @@ using System.Collections;
 
 public class CharacterScript : MonoBehaviour {
 
-	Animator anim;
+	public float speed;
+	public float turnSpeed;
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponents<Animator> ();
+	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		float move = Input.GetAxis ("Vertical");
-		anim.SetFloat ("Speed", move);
+	void Update ()
+	{
+		Movement ();
+	}
+
+	void Movement ()
+	{
+		float forwardMovement = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
+		float turnMovement = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
+
+		transform.Translate (Vector3.forward * forwardMovement);
+		transform.Rotate (Vector3.up * turnMovement);
 	}
 }
