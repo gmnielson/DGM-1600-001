@@ -20,6 +20,7 @@ public class CharacterScript : MonoBehaviour
 	public Stuff myStuff = new Stuff (10, 3, 4);
 	public float speed;
 	public float turnSpeed;
+	public float runSpeed;
 	public Rigidbody bulletPrefab;
 	public Transform firePosition;
 	public float bulletSpeed;
@@ -27,7 +28,7 @@ public class CharacterScript : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -36,7 +37,7 @@ public class CharacterScript : MonoBehaviour
 		Movement ();
 		Shoot ();
 	}
-
+		
 	void Movement ()
 	{
 		float forwardMovement = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
@@ -44,6 +45,7 @@ public class CharacterScript : MonoBehaviour
 
 		transform.Translate (Vector3.forward * forwardMovement);
 		transform.Rotate (Vector3.up * turnMovement);
+
 	}
 
 	void Shoot()
