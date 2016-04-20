@@ -14,8 +14,8 @@ public class Trigger : MonoBehaviour {
 	{
 		if (Hit.transform.tag == "Roller") 
 		{
-			//Destroy (gameObject);
-			Debug.Log ("Death");
+			Destroy (gameObject);
+			Debug.Log ("Rocket is killed.");
 		}
 	}
 }
