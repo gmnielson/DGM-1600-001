@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 6150b14708148c0458d1669824defb19
+timeCreated: 1461160797
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chest
+    100004: Headtop
+    100006: L_foot
+    100008: L_hand
+    100010: L_hip
+    100012: L_shoulder
+    100014: pCube1
+    100016: Pelvic
+    100018: R_foot
+    100020: R_hand
+    100022: R_hip
+    100024: R_shoulder
+    400000: //RootNode
+    400002: Chest
+    400004: Headtop
+    400006: L_foot
+    400008: L_hand
+    400010: L_hip
+    400012: L_shoulder
+    400014: pCube1
+    400016: Pelvic
+    400018: R_foot
+    400020: R_hand
+    400022: R_hip
+    400024: R_shoulder
+    4300000: pCube1
+    7400000: Jump
+    7400002: Walk
+    7400004: Idle
+    7400006: Shoot
+    9500000: //RootNode
+    13700000: pCube1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Pelvic
+        weight: 1
+      - path: Pelvic/Chest
+        weight: 1
+      - path: Pelvic/Chest/Headtop
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder/L_hand
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder/R_hand
+        weight: 1
+      - path: Pelvic/L_hip
+        weight: 1
+      - path: Pelvic/L_hip/L_foot
+        weight: 1
+      - path: Pelvic/R_hip
+        weight: 1
+      - path: Pelvic/R_hip/R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Pelvic
+        weight: 1
+      - path: Pelvic/Chest
+        weight: 1
+      - path: Pelvic/Chest/Headtop
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder/L_hand
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder/R_hand
+        weight: 1
+      - path: Pelvic/L_hip
+        weight: 1
+      - path: Pelvic/L_hip/L_foot
+        weight: 1
+      - path: Pelvic/R_hip
+        weight: 1
+      - path: Pelvic/R_hip/R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Pelvic
+        weight: 1
+      - path: Pelvic/Chest
+        weight: 1
+      - path: Pelvic/Chest/Headtop
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder/L_hand
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder/R_hand
+        weight: 1
+      - path: Pelvic/L_hip
+        weight: 1
+      - path: Pelvic/L_hip/L_foot
+        weight: 1
+      - path: Pelvic/R_hip
+        weight: 1
+      - path: Pelvic/R_hip/R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Shoot
+      takeName: Take 001
+      firstFrame: 85
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 3
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: Pelvic
+        weight: 1
+      - path: Pelvic/Chest
+        weight: 1
+      - path: Pelvic/Chest/Headtop
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder
+        weight: 1
+      - path: Pelvic/Chest/L_shoulder/L_hand
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder
+        weight: 1
+      - path: Pelvic/Chest/R_shoulder/R_hand
+        weight: 1
+      - path: Pelvic/L_hip
+        weight: 1
+      - path: Pelvic/L_hip/L_foot
+        weight: 1
+      - path: Pelvic/R_hip
+        weight: 1
+      - path: Pelvic/R_hip/R_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

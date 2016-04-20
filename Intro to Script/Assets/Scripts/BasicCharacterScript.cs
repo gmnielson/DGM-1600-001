@@ -5,7 +5,6 @@ public class BasicCharacterScript : MonoBehaviour
 {
 	Animator anim;
 	int jumpHash = Animator.StringToHash ("Jump");
-	int runRush = Animator.StringToHash ("Sprint");
 
 	// Use this for initialization
 	void Start ()
@@ -18,11 +17,6 @@ public class BasicCharacterScript : MonoBehaviour
 	{
 		float move = Input.GetAxis ("Vertical");
 		anim.SetFloat ("Walk", move);
-
-		if (Input.GetKeyDown (KeyCode.LeftShift))
-		{
-			anim.SetFloat (runRush);
-		}
 
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
