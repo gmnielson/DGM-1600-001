@@ -15,6 +15,6 @@ public class InvokeRepeating : MonoBehaviour
 	{
 		float x = Random.Range (-0.5f, 0.5f);
 		float z = Random.Range (-0.5f, 0.5f);
-		Instantiate (target, new Vector3 (x, .5f, z), Quaternion.identity);
+		Instantiate (target, new Vector3 (x, .005f, z), Quaternion.identity);
 	}
 }
