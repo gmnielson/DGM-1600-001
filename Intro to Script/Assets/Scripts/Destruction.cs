@@ -3,13 +3,13 @@ using System.Collections;
 
 public class Destruction : MonoBehaviour
 {
-	public GameObject target;
 
-	void Update ()
+	void OnTriggerEnter (Collider Box)
 	{
-		if(Input.GetKey(KeyCode.Space))
+		if(Box.transform.tag == "Bullet")
 		{
-			Destroy(target);
+			Destroy(gameObject);
+			Debug.Log ("This game object is destroyed by the bullet.");
 		}
 	}
 }

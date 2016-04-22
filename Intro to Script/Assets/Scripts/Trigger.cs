@@ -5,6 +5,7 @@ public class Trigger : MonoBehaviour {
 
 	void OnTriggerEnter (Collider Box)
 	{
-		Debug.Log ("Death");
+		Destroy (gameObject);
+		Debug.Log ("Rocket is killed.");
 	}
 }
