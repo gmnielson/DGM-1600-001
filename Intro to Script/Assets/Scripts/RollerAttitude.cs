@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Destruction : MonoBehaviour
-{
+public class RollerAttitude : MonoBehaviour {
 
 	void OnTriggerEnter (Collider Box)
 	{
 		if(Box.transform.tag == "Bullet")
 		{
-			Destroy(gameObject);
-			print ("You destroyed " + gameObject.name);
+			Debug.Log ("Roller can't take damage.");
 		}
 	}
 }
