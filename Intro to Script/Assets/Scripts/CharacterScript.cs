@@ -6,16 +6,21 @@ public class CharacterScript : MonoBehaviour
 	public class Stuff
 	{
 		public int bullets;
+		public int grenades;
+		public int rockets;
 
-		public Stuff(int bul)
+		public Stuff(int bul, int gre, int roc)
 		{
 			bullets = bul;
+			grenades = gre;
+			rockets = roc;
 		}
 	}
 
-	public Stuff myStuff = new Stuff (100);
+	public Stuff myStuff = new Stuff (10, 3, 4);
 	public float speed;
 	public float turnSpeed;
+	public float runSpeed;
 	public float jumpHeight;
 	public Rigidbody bulletPrefab;
 	public Transform firePosition;
@@ -38,9 +43,11 @@ public class CharacterScript : MonoBehaviour
 	{
 		float forwardMovement = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
 		float turnMovement = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
+		float jumpUp = Input.GetAxis ("Jump") * jumpHeight * Time.deltaTime;
 
 		transform.Translate (Vector3.forward * forwardMovement);
 		transform.Rotate (Vector3.up * turnMovement);
+		transform.Translate (Vector3.up * jumpUp);
 	}
 
 	void Shoot()

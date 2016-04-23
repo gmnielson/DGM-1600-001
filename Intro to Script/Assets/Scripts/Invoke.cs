@@ -8,14 +8,13 @@ public class Invoke : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Invoke ("SpawnObject", 45);
+		Invoke ("SpawnObject", 90);
 	}
 
 	void SpawnObject ()
 	{
 		float x = Random.Range (-0.01f, 0.01f);
 		float z = Random.Range (-0.01f, 0.01f);
-		Instantiate (target, new Vector3 (x, .025f, z), Quaternion.identity);
-		Debug.Log ("Home is at the center");
+		Instantiate (target, new Vector3 (x, 0, z), Quaternion.identity);
 	}
 }
